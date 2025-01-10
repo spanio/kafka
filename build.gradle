@@ -964,6 +964,7 @@ project(':core') {
       exclude module: 'logback-classic'
       exclude module: 'logback-core'
     }
+    implementation "software.amazon.msk:aws-msk-iam-auth:2.2.0"
     // ZooKeeperMain depends on commons-cli but declares the dependency as `provided`
     implementation libs.commonsCli
 
